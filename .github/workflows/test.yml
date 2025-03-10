@@ -25,4 +25,4 @@ jobs:
       - name: Copy .env.examples to .env
         run: cp ./1-integ-test/.env.example ./1-integ-test/.env
       - name: Run tests
-        run: cd 1-integ-test && npm run test:integration
+        run: cd 1-integ-test  chmod +x ./scripts/* && npm run test:integration
