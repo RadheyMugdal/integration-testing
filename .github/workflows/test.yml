@@ -22,8 +22,6 @@ jobs:
         uses: docker/setup-qemu-action@v2
         with:
           node-version: 19
-      - name: Install dependencies
-        run: npm install
       - name: Copy .env.examples to .env
         run: cp ./1-integ-test/.env.example ./1-integ-test/.env
       - name: Run tests
